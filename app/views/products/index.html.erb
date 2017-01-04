@@ -1,0 +1,10 @@
+<h1>All Items</h1>
+<% @cart.each do |item| %>
+  <li><%= item %></li>
+<% end %>
+
+<h1>Add An Item</h1>
+<%= form_tag jicama_path do %>
+<%= text_field_tag 'product' %>
+<%= submit_tag 'add to cart'%>
+<% end %>
